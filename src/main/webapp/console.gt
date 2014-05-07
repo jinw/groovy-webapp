@@ -1,0 +1,12 @@
+<html>
+<body>
+	<h1>JVM Scripting Console</h1>
+	<form method="post">
+		<textarea name="scriptText" rows="20" cols="80">${request.data.form.scriptText}</textarea>
+		<br/>
+		${request.data.form.scriptEngineNamesSelectTag} <input name="Run" type="submit" value="run"/>
+		<hr/>
+		<pre><code>${request.data.form.scriptingOutput}</code></pre>
+		<pre><code>${request.data.form.webOutResult}</code></pre>
+	</form>
+</body></html>

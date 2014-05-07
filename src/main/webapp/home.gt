@@ -1,0 +1,17 @@
+<html>
+	<head><title>Java Web Application</title></head>
+	<body>
+		<h1>Welcome</h1>
+
+		<p>Your application is ready.</p>
+		<pre>Application RealPath: ${application.getRealPath("/")}</pre>
+		<pre>Servlet Version: ${application.getMajorVersion()}/${application.getMinorVersion()}</pre>
+		<pre>ContextPath: ${request.getContextPath()}</pre>
+
+		<h2>Utilities</h2>
+		<ul>
+		<li><a href="${request.contextPath}/health.groovy">Health Check</a></li>
+		<li><a href="${request.contextPath}/console.groovy">Scripting Console</a></li>
+		</ul>
+	</body>
+</html>
